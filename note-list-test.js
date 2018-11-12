@@ -4,3 +4,13 @@ function testNoteListHasNotes() {
 };
 
 testNoteListHasNotes();
+
+function testNoteListListsNotes(note) {
+  var noteList = new NoteList();
+  var note = new Note("hi");
+  noteList.add(note)
+  assert.isTrue(noteList.notes[0].text == note.text);
+};
+
+
+testNoteListListsNotes();

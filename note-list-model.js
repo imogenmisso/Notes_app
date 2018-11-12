@@ -4,3 +4,7 @@
   }
 exports.NoteList = NoteList;
 })(this);
+
+NoteList.prototype.add = function(note) {
+  this.notes.push(note);
+}
