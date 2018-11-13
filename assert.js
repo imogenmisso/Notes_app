@@ -9,7 +9,7 @@ var assert = {
 var assert2 = {
   isEqual: function(assertionToCheck1, assertionToCheck2) {
     if (assertionToCheck1 != assertionToCheck2) {
-      throw new Error("Assertion failed: " + assertionToCheck1 + " is not equal to " + assertionToCheck2)
+      throw new Error("Assertion failed: " + assertionToCheck1 + " is not equal to " + assertionToCheck2);
     }
   }
 };
