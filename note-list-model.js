@@ -5,14 +5,11 @@
 exports.NoteList = NoteList;
 })(this);
 
-NoteList.prototype.add = function(note) {
+NoteList.prototype.add = function(text) {
+  var note = new Note(text);
   this.notes.push(note);
-}
+};
 
 NoteList.prototype.listAll = function() {
-  var string = ""
-  for (var i = 0; i < this.notes.length; i++) {
-    string += (this.notes[i].text + ", ")
-  }
-  return string.slice(0, -2)
-}
+  return this.notes;
+};
