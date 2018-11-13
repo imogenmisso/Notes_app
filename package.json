@@ -19,5 +19,8 @@
   "homepage": "https://github.com/hnryjmes/NotesJS#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "test-sweet": "^2.0.2"
   }
 }
